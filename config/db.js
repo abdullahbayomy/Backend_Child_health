@@ -1,14 +1,15 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const connectDB = async () => {
   const conn = await mongoose.connect(
     process.env.MONGO_URI ||
-      'mongodb+srv://abdallah121:abdallah121@healthcare-oqzoe.mongodb.net/test?retryWrites=true&w=majority',
+      "mongodb+srv://abdallah121:abdallah121@healthcare.oqzoe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+
     {
       useNewUrlParser: true,
       useCreateIndex: true,
       useUnifiedTopology: true,
-      useFindAndModify: false
+      useFindAndModify: false,
     }
   );
 
